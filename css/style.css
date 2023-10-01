@@ -1,0 +1,235 @@
+@import url(https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap);
+
+:root
+{
+   --primary-color:#757575;
+    --fon-color:#2F303A;
+    --color-button:#2196f3;
+    --title-color:#212121;
+--background-color:white;
+--nav-color:rgba(255, 255, 255, 0.60);
+--herobuttoncolor:#188ce8;
+--section-title-color:#212121;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    color:var(--primary-color);
+    font-weight: 400;
+     font-style:normal;
+     line-height:normal;
+
+}
+footer{
+    background-color: var(--fon-color);
+}
+.HeroButton
+{
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    background-color: var(--color-button);
+     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); 
+    border-radius: 4px;
+    color:var(--background-color);
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 300ms;
+    text-align:center;
+    margin: 0 auto;
+    display: block;
+}
+.solutionsForBuisness{
+    color: var(--background-color);
+    font-size: 44px;
+    text-transform: uppercase;
+    line-height: 60px;
+    letter-spacing: 2.64px;
+    word-wrap: break-word;
+    font-weight: bold;
+text-align:center;
+}
+.title
+{
+background-color: var(--fon-color);
+padding-top: 200px;
+padding-bottom:280px;
+padding-left:452px;
+padding-right:452px;
+}
+.filter
+{
+    transition: background-color 300ms;
+    color: var(--section-title-color);
+font-size: 16px;
+font-weight: 500;
+line-height: 26px;
+letter-spacing: 0.48px;
+word-wrap: break-word
+}
+.HeroButton:focus,.HeroButton:active,.HeroButton:hover
+{
+    background-color: var(--herobuttoncolor);
+    color:var(--background-color);
+}
+.filter:hover,.filter:active,.filter:focus
+{
+    background-color: var(--color-button);
+    color:var(--background-color);
+}
+.headerLogo
+{
+color:var(--title-color);
+font-size: 26px;
+font-family: "Raleway" , sans-serif;
+font-weight: 700;
+letter-spacing: 0.78px;
+word-wrap: break-word;
+text-decoration: none;
+}
+.footerLogo
+{
+color:var(--background-color);
+font-size: 26px;
+font-family: "Raleway", sans-serif;
+font-weight: 700;
+letter-spacing: 0.78px;
+word-wrap: break-word;
+text-decoration: none;
+}
+.BlueLogo
+{
+    color:var(--color-button);
+}
+.adress
+{
+    color: var(--background-color);
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.42px;
+    word-wrap: break-word;
+    text-decoration: none;
+    font-style: normal;
+}
+.NavigationMenu:hover, .NavigationMenu:active, .NavigationMenu:focus
+{
+   color:var(--color-button);  
+}
+.footer-contact:hover, .footer-contact:active, .footer-contact:focus
+{
+   color:var(--color-button);  
+}
+.header-contact:hover, .header-contact:active, .header-contact:focus
+{
+   color:var(--color-button);  
+}
+.NavigationMenu
+{
+    color: var(--title-color);
+font-size: 14px;
+font-weight: 500;
+letter-spacing: 0.28px;
+word-wrap: break-word;
+text-decoration: none;
+transition:color 300ms;
+}
+.footer-contact
+{
+color: var(--nav-color);
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.42px;
+word-wrap: break-word;
+text-decoration: none;
+font-style:normal;
+transition: color 300ms;
+}
+.benefits
+{
+    color: var(--title-color);
+font-size: 14px;
+font-weight: 700;
+text-transform: uppercase;
+letter-spacing: 0.42px;
+word-wrap: break-word
+}
+.Description
+{
+    color: var(--primary-color);
+font-size: 14px;
+line-height: 24px;
+letter-spacing: 0.42px;
+word-wrap: break-word
+}
+.sectiontitle
+{color: var(--section-title-color);
+font-size: 36px;
+font-weight: 700;
+letter-spacing: 1.08px;
+word-wrap: break-word;
+text-decoration: none;
+font-style:normal;
+}
+.programmers
+{
+color: var(--title-color);
+font-size: 16px;
+font-weight: 500;
+letter-spacing: 0.48px;
+word-wrap: break-word
+}
+.work
+{
+    color: var(--primary-color);
+font-size: 16px;
+letter-spacing: 0.48px;
+word-wrap: break-word
+}
+.projectName
+{
+color: var(--title-color);
+font-size: 18px;
+font-weight: 700;
+line-height: 36px;
+letter-spacing: 1.08px;
+word-wrap: break-word
+}
+.projectType
+{
+    color:var(--primary-color);
+font-size: 16px;
+line-height: 30px;
+letter-spacing: 0.48px;
+word-wrap: break-word;
+}
+ul 
+{
+list-style: none;
+text-decoration: none;
+}
+.header-contact
+{
+    color: var(--primary-color);
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.42px;
+word-wrap: break-word;
+text-decoration: none;
+font-style:normal;
+transition: color 300ms;
+}
+a
+{
+    text-decoration: none;
+}
+.active
+{
+    color: var(--color-button);
+font-size: 14px;
+font-weight: 500;
+letter-spacing: 0.28px;
+word-wrap: break-word;
+text-decoration: none;
+transition:color 300ms;
+}
