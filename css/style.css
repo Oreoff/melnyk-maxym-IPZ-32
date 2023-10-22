@@ -52,8 +52,10 @@ a {
 button {
   border: var(--background-color);
 }
-
-
+header
+{
+  border: 1px #ECECEC solid
+}
 .HeroButton {
   text-align: center;
   width: 200px;
@@ -133,11 +135,9 @@ button.filters-item {
   text-decoration: none;
   margin-right:93px;
 }
-.adress
+.adress:not(:first-child)
 {
-  display:flex;
-  flex-direction: column;
-  gap:12px;
+  margin-bottom:12px;
 }
 .footer-logo {
   color: var(--background-color);
@@ -147,7 +147,6 @@ button.filters-item {
   letter-spacing: 0.78px;
   word-wrap: break-word;
   text-decoration: none;
-  padding-bottom: 28px;
 }
 .BlueLogo {
   color: var(--color-button);
@@ -187,6 +186,7 @@ header .container {
   align-items:center;
 }
 .footer-contact{
+  display:block;
   color: var(--nav-color);
   font-size: 14px;
   line-height: 16px;
@@ -195,7 +195,7 @@ header .container {
   text-decoration: none;
   font-style: normal;
   transition: color 300ms;
-  
+  margin-top:12px;
 }
 .benefits {
   color: var(--title-color);
@@ -232,6 +232,7 @@ header .container {
   letter-spacing: 0.48px;
   word-wrap: break-word;
   text-align: center;
+  margin-bottom:10px;
 }
 .work {
   color: var(--primary-color);
@@ -329,6 +330,7 @@ a {
   display: inline-block;
   background-color: var(--background-color);
   border:  1px #EEEEEE solid;
+  max-width:370px;
 }
 .adress-block {
   display: flex;
@@ -350,19 +352,14 @@ a {
 }
 .programmers-desc
 {
-  display:flex;
-  flex-direction: column;
+ 
   justify-content: center;
- margin-top:30px;
- margin-bottom: 30px;
-  gap:10px;
+  padding-top:30px;
+  padding-bottom: 30px;
 }
 .footer-contact-list
 {
   margin-top:28px;
-  display:flex;
-  flex-direction: column;
-  gap:12px;
 }
 .fliters-list
 {
@@ -378,7 +375,17 @@ gap:8px;
 }
 .projects-desc
 {
-  margin-left:24px;
+  padding-left:24px;
+  padding-right:24px;
   padding-top:20px;
   padding-bottom:20px;
+}
+.benefits-caption
+{
+margin-bottom:10px;
+}
+.filters-section
+{
+  padding-bottom:0px;
+  padding:0 0;
 }
