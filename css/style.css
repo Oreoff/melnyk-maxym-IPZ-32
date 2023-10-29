@@ -135,7 +135,7 @@ button.filters-item {
   text-decoration: none;
   margin-right:93px;
 }
-.adress:not(:first-child)
+.adress
 {
   margin-bottom:12px;
 }
@@ -185,6 +185,10 @@ header .container {
   display: flex;
   align-items:center;
 }
+p .footer-contact :not(:last-child)
+{
+ margin-bottom:12px;
+}
 .footer-contact{
   display:block;
   color: var(--nav-color);
@@ -194,9 +198,9 @@ header .container {
   word-wrap: break-word;
   text-decoration: none;
   font-style: normal;
-  transition: color 300ms;
-  margin-top:12px;
+  transition: color 300ms; 
 }
+
 .benefits {
   color: var(--title-color);
   font-size: 14px;
@@ -270,7 +274,6 @@ header .container {
 .benefits li {
   max-width: 270px;
 }
-
 .menu a,
 .adress-block a {
   padding: 32px 0;
@@ -367,6 +370,7 @@ margin-top: 94px;
 display:flex;
 justify-content: center;
 gap:8px;
+margin-bottom: 50px;
 }
 .projects-section
 {
@@ -388,4 +392,12 @@ margin-bottom:10px;
 {
   padding-bottom:0px;
   padding:0 0;
+}
+.link
+{
+  display: block;
+}
+.email
+{
+  margin-bottom:12px;
 }
