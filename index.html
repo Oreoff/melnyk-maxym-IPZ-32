@@ -10,104 +10,118 @@
 
 <body>
     <header>
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <a  href="#" class="headerLogo"><span class="BlueLogo">Web</span>Studio</a>
-        <nav class="menu">
-            <ul>
-                <li><a class = "active" href="index.html">Студія</a></li>
-                <li><a class = "NavigationMenu" href="portfolio.html">Портфоліо</a></li>
-                <li><a class = "NavigationMenu" href="#">Контакти</a></li>
-            </ul>
-        </nav>
-        <ul>
-            <li><a class = "header-contact" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a class = "header-contact" href="tel:+3809611111">+3809611111</a></li>
-        </ul>
+            <div class="container">
+                <a  href="#" class="header-logo"><span class="BlueLogo">Web</span>Studio</a>
+                <nav class="menu">
+                    <ul>
+                        <li><a class = "NavigationMenu active" href="index.html">Студія</a></li>
+                        <li><a class = "NavigationMenu" href="portfolio.html">Портфоліо</a></li>
+                        <li><a class = "NavigationMenu" href="#">Контакти</a></li>
+                    </ul>
+                </nav>
+                <ul class="adress-block">
+                    <li><a class = "header-contact" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                    <li><a class = "header-contact" href="tel:+3809611111">+3809611111</a></li>
+                </ul>
+            </div>
     </header>
     <main>
         <section class="title">
-            <h1 class="solutionsForBuisness"> Ефективні рішення для вашого бізнесу</h1>
-            <button type = button class="HeroButton"> Замовити послугу</button>
+            <div class="container">
+                <h1 class="solutions-for-buisness"> Ефективні рішення для вашого бізнесу</h1>
+                <button type = button class="HeroButton"> Замовити послугу</button>
+            </div> 
+        </section>
+        <section class="benefits">
+            <div class="container">
+                <ul class="benefits-list">
+                    <li class="benefits-item">
+                        <h3 class="benefits-caption">Увага до деталей</h3>
+                        <p class="benefits-desc">
+                            Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
+                        </p>
+                    </li>
+                    <li class = "class-benefits">
+                        <h3 class="benefits-caption">Пунктуальність</h3>
+                        <p class = "benefits-desc">
+                            Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
+                    </li>
+                    <li class = "class-benefits">
+                        <h3 class="benefits-caption">Планування</h3>
+                        <p class = "benefits-desc">
+                            Так само консультація з широким активом значною мірою зумовлює.
+                        </p>
+                    </li>
+                    <li class = "class-benefits">
+                        <h3 class="benefits-caption">Сучасні технології</h3>
+                        <p class = "benefits-desc">
+                            Значимість цих проблем настільки очевидна, що реалізація планових завдань.
+                        </p>
+                    </li>
+                </ul>
+            </div>
         </section>
         <section>
-            <ul>
-                <li>
-                    <h3 class = "benefits">Увага до деталей</h3>
-                    <p class = "Description">
-                        Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
-                    </p>
-                </li>
-                <li>
-                    <h3 class = "benefits">Пунктуальність</h3>
-                    <p class = "Description">
-                        Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
-                </li>
-                <li>
-                    <h3 class = "benefits">Планування</h3>
-                    <p class = "Description">
-                        Так само консультація з широким активом значною мірою зумовлює.
-                    </p>
-                </li>
-                <li>
-                    <h3 class = "benefits">Сучасні технології</h3>
-                    <p class = "Description">
-                        Значимість цих проблем настільки очевидна, що реалізація планових завдань.
-                    </p>
-                </li>
-            </ul>
-        </section>
-        <section>
-            <h2 class = "sectiontitle">
+            <h2 class = "section-title">
                 Чим ми займаємось
             </h2>
-            <ul>
-
-                <li><img src="images/img-4.jpg" width="324" alt="Програмування"></li>
-                <li><img src="images/img-5.jpg" width="324" alt="UI/UX розробка"></li>
-                <li><img src="images/img-6.jpg" width="324" alt="Дизайн"></li>
+            <ul class = "work-list">
+                <li class = "work-item"><img src="images/img-4.jpg" width="324"  alt="Програмування"></li>
+                <li class = "work-item"><img src="images/img-5.jpg" width="324"  alt="UI/UX розробка"></li>
+                <li class = "work-item"><img src="images/img-6.jpg" width="324"  alt="Дизайн"></li>
             </ul>
         </section>
-        <section>
-            <h2 class = "sectiontitle"> Наша команда</h2>
-            <ul>
-                <a href="#" >
-                <li>
-                    <img src="images/img.jpg" width="324" alt="Ігор Дем'яенко">
-                    <h3 class="programmers">Ігор Дем'яненко</h3>
-                    <p class="work">Product Designer</p>
+        <section class = workers>
+            <h2 class = "section-title"> Наша команда</h2>
+            <ul class = "cards-list">
+                <li class = "worker-card">
+                    <a class = "link" href="#" >
+                    <img src="images/img.jpg" width="270" alt="Ігор Дем'яенко">
+                     <div class="programmers-desc">
+                    <h3 class="programmers-name">Ігор Дем'яненко</h3>
+                    <p class="work">Product Designer</p> 
+                </div>
+                </a>
                 </li>
-            </a>
-            <a href="">
-                <li>
-                    <img src="images/img-1.jpg" width="324" alt="Ольга Рєпіна">
-                    <h3 class="programmers">Ольга Рєпіна</h3>
+                <li class= "worker-card">
+                    <a class = "link" href="#">
+                    <img src="images/img-1.jpg" width="270" alt="Ольга Рєпіна">
+                    <div class="programmers-desc">
+                    <h3 class="programmers-name">Ольга Рєпіна</h3>
                     <p class="work">Developer</p>
-                </li>
-            </a>
-                <a href="#">
-                <li>
-                    <img src="images/img-2.jpg" width="324" alt="Микола Тарасов">
-                    <h3 class="programmers">Микола Тарасов</h3>
+                </div>
+                </a>
+                </li>     
+                <li class= "worker-card">
+                     <a class = "link" href="#"> 
+                    <img src="images/img-2.jpg"  width="270"  alt="Микола Тарасов">
+                    <div class="programmers-desc">
+                    <h3 class="programmers-name">Микола Тарасов</h3>
                     <p class="work">Marketing</p>
+                </div>
+                </a>
                 </li>
-            </a>
-            <a href="#">
-                <li>
-                    <img src="images/img-3.jpg" width="324" alt="Михайло Єрмаков">
-                    <h3 class="programmers">Михайло Єрмаков</h3>
+                <li class= "worker-card"> 
+                    <a class = "link" href="#">
+                    <img src="images/img-3.jpg"  width="270" alt="Михайло Єрмаков">
+                    <div class="programmers-desc">
+                    <h3 class="programmers-name">Михайло Єрмаков</h3>
                     <p class="work">UI Designer</p>
+                </div>
+                </a>
                 </li>
-            </a>
             </ul>
         </section>
     </main>
     <footer>
-        <a class = "footerLogo" href="index.html" ><span class="BlueLogo">Web</span>Studio</a>
-        <address>
+        <div class="container">
+        <a class = "footer-logo" href="#" ><span class="BlueLogo">Web</span>Studio</a>
+        <address class = "footer-contact-list">
             <p class = "adress">м.Київ, вул.Лесі Українки, 26</p>
-            <p><a class = "footer-contact" href="mailto:info@devstudio.com">info@devstudio.com</a></p>
-            <p><a  class = "footer-contact" href="tel:+3809611111">+3809611111</a></p>
+            <p><a class = "footer-contact email" href="mailto:info@devstudio.com">info@devstudio.com</a></p>
+            <p><a class = "footer-contact number" href="tel:+3809611111">+3809611111</a></p>
         </address>
+    </div>
     </footer>
 </body>
 </html>
