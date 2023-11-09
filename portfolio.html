@@ -9,21 +9,27 @@
 </head>
 <body>
     <header>
-            <div class="container">
-                <a  href="#" class="header-logo"><span class="BlueLogo">Web</span>Studio</a>
-                <nav class="menu">
-                    <ul>
-                        <li><a class = "NavigationMenu" href="index.html">Студія</a></li>
-                        <li><a class = "NavigationMenu active" href="portfolio.html">Портфоліо</a></li>
-                        <li><a class = "NavigationMenu" href="#">Контакти</a></li>
-                    </ul>
-                </nav>
-                <ul class="adress-block">
-                    <li><a class = "header-contact" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                    <li><a class = "header-contact" href="tel:+3809611111">+3809611111</a></li>
+        <div class="container">
+            <a  href="#" class="header-logo"><span class="BlueLogo">Web</span>Studio</a>
+            <nav class="menu">
+                <ul>
+                    <li><a class = "NavigationMenu" href="index.html">Студія</a></li>
+                    <li><a class = "NavigationMenu active" href="portfolio.html">Портфоліо</a></li>
+                    <li><a class = "NavigationMenu" href="#">Контакти</a></li>
                 </ul>
-            </div>
-    </header>
+            </nav>
+            <ul class="adress-block">
+                <li class = "header-contact"><a class = "header-contact" href="mailto:info@devstudio.com">
+                    <svg viewBox="0 0 39 32" class = "header-contact-logo" >
+                        <use xlink:href = "/images/icons.svg#icon-envelope-hover"/>
+                </svg>info@devstudio.com</a></li>
+                <li class = "header-contact"><a class = "header-contact" href="tel:+3809611111">
+                    <svg viewBox="0 0 39 32" class = "header-contact-logo">
+                        <use xlink:href = "/images/icons.svg#icon-smartphone"/>
+                </svg>+3809611111</a></li>
+            </ul>
+        </div>
+</header>
     <main>
         <section class = "projects-section">
        <div class="container">
@@ -133,12 +139,43 @@
     </main>
     <footer>
         <div class="container">
-            <a class = "footer-logo" href="#" ><span class="BlueLogo">Web</span>Studio</a>
-            <address class = "footer-contact-list">
+        <ul class="footer-block-list">
+    
+      <li class="footer=block-item">  
+        <a class = "footer-logo" href="#" ><span class="BlueLogo">Web</span>Studio</a>
+        <address class = "footer-contact-list">
             <p class = "adress">м.Київ, вул.Лесі Українки, 26</p>
             <p><a class = "footer-contact email" href="mailto:info@devstudio.com">info@devstudio.com</a></p>
             <p><a class = "footer-contact number" href="tel:+3809611111">+3809611111</a></p>
-            </address>
-        </div>
+        </address>
+    </li>
+    <li class="footer=block-item">
+        <h3 class="social-networks-title">приєднуйтесь</h3>
+        <ul class="footer-logo-list">
+        <li class="footer-logo-item"><svg  viewBox="0 0 88 44" class = "footer-social-networks-logo">
+            <use xlink:href = "/images/icons.svg#icon-instagram"/>
+         </svg>
+        </li>
+        <li class="footer-logo-item">
+         <svg  viewBox="0 0 88 44" class = "footer-social-networks-logo">
+            <use xlink:href = "/images/icons.svg#icon-twitter"/>
+         </svg>
+        </li>
+        <li class="footer-logo-item">
+         <svg  viewBox="0 0 88 44" class = "footer-social-networks-logo">
+            <use xlink:href = "/images/icons.svg#icon-facebook"/>
+         </svg>
+        </li>
+        <li class="footer-logo-item">
+         <svg  viewBox="0 0 88 44" class = "footer-social-networks-logo">
+            <use xlink:href = "/images/icons.svg#icon-linkedin2"/>
+         </svg>
+        </li>
+        </ul>
+
+        </li>
+        </ul>
+    </div>
     </footer>
+
 </body>
