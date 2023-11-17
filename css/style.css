@@ -87,7 +87,7 @@ header
 }
 .title {
 background-size:cover;
-background: url(/images/back-image.jpg);
+background: url(../images/back-image.jpg);
   height: 600px;
   display: flex;
   align-items: center;
