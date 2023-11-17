@@ -83,12 +83,22 @@ header
   font-weight: 700;
   max-width:696px; 
  text-align:center;
+ 
 }
 .title {
-  background-color: var(--fon-color);
+background-size:cover;
+background: url(../images/back-image.jpg);
+background-color: rgba(47, 48, 58, 0.4);
   height: 600px;
   display: flex;
   align-items: center;
+}
+.overlay
+{
+  position: fixed;
+  background-color: rgba(47, 48, 58, 0.4);
+  width: 100%;
+  height:100%;
 }
 .container {
     max-width: 1200px;
@@ -171,7 +181,9 @@ button.filters-item {
 .header-contact:hover,
 .header-contact:focus {
   color: var(--color-button);
+  fill:var(--color-button);
 }
+
 .NavigationMenu {
   color: var(--title-color);
   font-size: 14px;
@@ -294,6 +306,7 @@ li {
   word-wrap: break-word;
   text-decoration: none;
   transition: color 300ms;
+  fill:var(--primary-color);
 }
 a {
   text-decoration: none;
@@ -315,7 +328,6 @@ a {
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
-  height:370px;
   background-color: var(--background-color);
 }
 .worker-card:not(:first-child)
@@ -400,4 +412,121 @@ margin-bottom:10px;
 .email
 {
   margin-bottom:12px;
+}
+.clients-item
+{
+  display:flex;
+  border:1px solid #AFB1B8;
+  border-radius: 4px;
+  width:170px;
+  height:92px;
+  justify-content: center;
+  align-items: center;
+  fill:#AFB1B8;
+}
+.clients-list
+{
+  margin-top: 50px;
+  justify-content: center;
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  gap:30px;
+}
+.clients-ref{
+ fill:#AFB1B8;
+ transition: 300ms;
+}
+.clients-item:hover .clients-logo{
+  fill:var(--color-button);
+  
+  transition: 300ms;
+}
+.clients-item:hover
+{
+  border-color: var(--color-button);
+  transition: 300ms;
+}
+.clients-ref:hover
+{
+  fill:var(--color-button);
+}
+.clients-logo  
+{
+  width: 106px;
+  height:60px;
+}
+
+.social-networks-logo
+{
+width:44px;
+height:44px;
+border-width:12px;
+fill:#AFB1B8;
+border-radius: 50%;
+}
+.social-networks-logo:hover, .social-networks-logo:focus
+, .footer-social-networks-logo:hover,.footer-social-networks-logo:focus{
+  
+  background-color: var(--color-button);
+  fill: var(--background-color);
+  transition:300ms;
+}
+.social-networks
+{
+margin-top:16px;
+display: flex;
+justify-content: center;
+gap:10px;
+flex-wrap: wrap;
+}
+.social-networks-title
+{
+color: #FFF;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 0.42px;
+text-transform: uppercase;
+margin-bottom: 20px;
+}
+.footer-social-networks-logo
+{
+  width: 44px;
+  height: 44px;
+fill:#FFF;
+background: rgba(255, 255, 255, 0.10);
+border-radius: 50%;
+}
+.header-contact-logo
+{
+  transition: 300ms;
+  width: 16px;
+  margin-right: 10px;
+}
+.footer-block-list
+{
+  display: flex;
+  gap:94px;
+}
+.benefits-logo
+{
+  width: 70px;
+  height: 70px;
+  align-self: center;
+}
+.benefits-svg-div
+{
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-bottom:30px;
+  background-color: #f5f4fa;
+  display: flex;
+  justify-content: center;
+}
+.footer-logo-list
+{
+  display: flex;
+  gap:10px;
 }
