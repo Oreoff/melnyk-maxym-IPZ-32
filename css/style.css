@@ -88,6 +88,7 @@ header
 .title {
 background-size:cover;
 background: url(../images/back-image.jpg);
+background-color: rgba(47, 48, 58, 0.4);
   height: 600px;
   display: flex;
   align-items: center;
