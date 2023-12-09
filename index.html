@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>WebStudio</title>
 </head>
 
@@ -316,17 +317,16 @@
     </main>
     <footer>
         <div class="container">
-            <ul class="footer-block-list">
-
-                <li class="footer=block-item">
+            <div class="footer-container">
+                <div class="footer-block-item">
                     <a class="footer-logo" href="#"><span class="BlueLogo">Web</span>Studio</a>
                     <address class="footer-contact-list">
                         <p class="adress">м.Київ, вул.Лесі Українки, 26</p>
                         <p><a class="footer-contact email" href="mailto:info@devstudio.com">info@devstudio.com</a></p>
                         <p><a class="footer-contact number" href="tel:+3809611111">+3809611111</a></p>
                     </address>
-                </li>
-                <li class="footer=block-item">
+                </div>
+                <div class="footer-block-item">
                     <h3 class="social-networks-title">приєднуйтесь</h3>
                     <ul class="footer-logo-list">
                         <li class="footer-logo-item">
@@ -360,11 +360,12 @@
                             </a>
                         </li>
                     </ul>
-                </li>
-                <li class="footer-block-item sub-section">
-                    <label class="sub-title">підпишіться на розсилку</label>
+                </div>
+                    <div class="footer-block-item">
+                <form class="footer-block-item sub-section">
+                    <h3 class="sub-title">підпишіться на розсилку</h3>
                     <div class="sub-container">
-                        <input type="text" placeholder="E-mail" class="footer-input" name="">
+                        <input type="text" placeholder="E-mail" class="footer-input" id="email">
                         <button class="subscribe-button" type="submit">
                             Підписатися
                             <svg viewBox="0 0 31 32" class="subscribe-svg">
@@ -372,53 +373,54 @@
                             </svg>
                         </button>
                     </div>
-                </li>
-            </ul>
+                <form>
+                </div>
+            </div>
         </div>
     </footer>
     <div data-modal class="modal-window is-hidden">
         <div class="modal-container">
             <div class="close-container">
                 <button data-modal-close="#modal-window" class="close">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
                         <path
                             d="M15 4.10786L13.8921 3L9.5 7.39214L5.10786 3L4 4.10786L8.39214 8.5L4 12.8921L5.10786 14L9.5 9.60786L13.8921 14L15 12.8921L10.6079 8.5L15 4.10786Z"
-                            fill="black" />
+                             />
                     </svg>
             </div>
-            </button>
+            </button>     
+        <h2 class="modal-window-title">Залиште свої дані, ми вам передзвонимо</h2>
             <form class="modal-form">
-                <h2 class="modal-window-title">Залиште свої дані, ми вам передзвонимо</h2>
-                <label class="input-desc">Ім'я</label>
+                <label class="input-desc" for="name">Ім'я</label>
                 <div class="input-container">
-                    <input type="text" name="Name" class="modal-input">
+                    <input type="text" name="Name" class="modal-input" id = "name">
                     <svg viewBox="0 0 31 32" class="modal-icon">
                         <use xlink:href="images/icons.svg#icon-person-black-18dp-1" />
                     </svg>
                 </div>
-                <label class="input-desc">Телефон</label>
+                <label class="input-desc" for="phone">Телефон</label>
                 <div class="input-container">
-                    <input type="text" name="Name" class="modal-input">
+                    <input type="text" name="Name" class="modal-input" id="phone">
                     <svg viewBox="0 0 31 32" class="modal-icon">
                         <use xlink:href="images/icons.svg#icon-phone-black-18dp-1" />
                     </svg>
                 </div>
-                <label class="input-desc">Пошта</label>
+                <label class="input-desc" for="mail">Пошта</label>
                 <div class="input-container">
-                    <input type="text" name="Name" class="modal-input">
+                    <input type="text" name="Name" class="modal-input" id="mail">
                     <svg viewBox="0 0 31 32" class="modal-icon">
                         <use xlink:href="images/icons.svg#icon-email-black-18dp-1" />
                     </svg>
                 </div>
-                <label class="input-desc">Коментар</label>
+                <label class="input-desc" for="comments">Коментар</label>
                 <textarea name="Comment" id="comments" cols="30" rows="6" placeholder="Введіть текст"
                     class="modal-input area"></textarea>
                 <div class="terms">
-                    <input type="checkbox" class="modal-checkbox">
+                    <input type="checkbox" class="modal-checkbox" id="check">
                     <p class="terms-text">Погоджуюся з розсилкою та приймаю <a href="#" class="terms-href">Умови
                             договору</a></p>
                 </div>
-                <button data-modal-close = "#modal-window" class = "send-button">Відправити</button>
+                <button data-modal-close = "#modal-window" type = "submit" class = "send-button">Відправити</button>
             </form>
         </div>
     </div>
